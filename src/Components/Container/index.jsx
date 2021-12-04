@@ -1,6 +1,6 @@
 import React from "react";
 
-import Titulo from "../Titulo";
+import { Titulo } from "./styles";
 import Conta from "../Conta";
 
 const Container = () => {
