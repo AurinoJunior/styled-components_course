@@ -4,6 +4,8 @@ import privado from "../../assets/images/privado.svg";
 import olho_icone from "../../assets/images/olho.svg";
 import dinheiro from "../../assets/images/dinheiro.svg";
 
+import { Box, Button, Saldo } from "./styles";
+
 export default () => {
   const [toggleState, untoggle] = useState(true);
 
@@ -12,7 +14,7 @@ export default () => {
   };
 
   return (
-    <div className="box">
+    <Box>
       <h2>Conta</h2>
       <div style={{ fontSize: "26px", padding: "20px 0" }}>
         Saldo disponível{" "}
@@ -20,13 +22,13 @@ export default () => {
           <img width="25" height="25" src={dinheiro} alt="Ícone Saldo" />
         </span>
         {toggleState ? (
-          <div className="saldo">
+          <Saldo>
             <span className="detalhe">R$</span> 0,00{" "}
-          </div>
+          </Saldo>
         ) : null}
       </div>
 
-      <button className="btn" onClick={toggleHandler}>
+      <Button onClick={toggleHandler}>
         <img
           style={{ marginTop: "2px" }}
           width="25"
@@ -34,8 +36,7 @@ export default () => {
           src={toggleState ? privado : olho_icone}
           alt="Privacidade do Saldo"
         />
-      </button>
-    </div>
+      </Button>
+    </Box>
   );
 };
-
