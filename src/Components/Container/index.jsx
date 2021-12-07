@@ -2,6 +2,7 @@ import React from "react";
 
 import { Titulo, Container, Conteudo } from "./styles";
 import Conta from "../Conta";
+import Extrato from "../Extrato";
 
 export default () => {
   return (
@@ -9,6 +10,7 @@ export default () => {
       <Titulo>Olá Fulano!</Titulo>
       <Conteudo>
         <Conta />
+        <Extrato />
       </Conteudo>
     </Container>
   );

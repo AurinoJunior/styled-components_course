@@ -13,6 +13,7 @@ export const Button = styled.button`
   cursor: pointer;
 `
 export const Box = styled.div`
+  max-height: 15rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
