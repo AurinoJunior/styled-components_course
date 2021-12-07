@@ -17,7 +17,7 @@ const Conta = () => {
       <div style={{ fontSize: "26px", padding: "20px 0" }}>
         Saldo disponível{" "}
         <span>
-          <img className="imagem-icone" src={dinheiro} alt="Ícone Saldo" />
+          <img width="25" height="25" src={dinheiro} alt="Ícone Saldo" />
         </span>
         {toggleState ? (
           <div className="saldo">
@@ -29,7 +29,8 @@ const Conta = () => {
       <button className="btn" onClick={toggleHandler}>
         <img
           style={{ marginTop: "2px" }}
-          className="imagem-icone"
+          width="25"
+          height="25"
           src={toggleState ? privado : olho_icone}
           alt="Privacidade do Saldo"
         />

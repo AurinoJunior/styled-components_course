@@ -1,17 +1,15 @@
 import React from "react";
 
-import { Titulo } from "./styles";
+import { Titulo, Container, Conteudo } from "./styles";
 import Conta from "../Conta";
 
-const Container = () => {
+export default () => {
   return (
-    <div className="container">
+    <Container>
       <Titulo>Olá Fulano!</Titulo>
-      <section className="conteudo">
+      <Conteudo>
         <Conta />
-      </section>
-    </div>
+      </Conteudo>
+    </Container>
   );
 };
-
-export default Container;
