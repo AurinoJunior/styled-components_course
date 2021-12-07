@@ -4,7 +4,7 @@ import privado from "../../assets/images/privado.svg";
 import olho_icone from "../../assets/images/olho.svg";
 import dinheiro from "../../assets/images/dinheiro.svg";
 
-const Conta = () => {
+export default () => {
   const [toggleState, untoggle] = useState(true);
 
   const toggleHandler = () => {
@@ -39,4 +39,3 @@ const Conta = () => {
   );
 };
 
-export default Conta;
