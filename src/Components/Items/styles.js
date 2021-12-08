@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled from "styled-components";
 
 export const Items = styled.div`
   box-shadow: 4px 4px 20px 0px rgba(0, 0, 0, 0.1);
@@ -9,4 +9,4 @@ export const Items = styled.div`
   justify-content: space-around;
   padding: 10px;
   font-size: 12px;
-`
+`;
