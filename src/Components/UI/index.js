@@ -1,10 +1,6 @@
 import React from "react";
 import styled from "styled-components";
 
-export const Icone = ({ src, alt }) => {
-  return <img width="25" height="25" src={src} alt={alt} />;
-};
-
 export const ButtonTema = styled.button`
   position: absolute;
   top: 4vh;
@@ -13,3 +9,16 @@ export const ButtonTema = styled.button`
   border: none;
   cursor: pointer;
 `;
+
+const IconeTema = styled.img`
+  filter: ${({ theme }) =>
+    theme.type === "claro" ? "invert(0)" : "invert(1)"};
+`;
+
+export const Icone = ({ src, alt, filterOff }) => {
+  return filterOff ? (
+    <img width="25" height="25" src={src} alt={alt} />
+  ) : (
+    <IconeTema width="25" height="25" src={src} alt={alt} />
+  );
+};

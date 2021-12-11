@@ -4,7 +4,7 @@ import ThemeOff from "../../assets/images/themeOff.svg";
 
 import { Icone } from "../UI";
 
-const claro = <Icone src={ThemeOn} alt="Tema Claro" />;
-const escuro = <Icone src={ThemeOff} alt="Tema Escuro" />;
+const claro = <Icone src={ThemeOn} alt="Tema Claro" filterOff={true} />;
+const escuro = <Icone src={ThemeOff} alt="Tema Escuro" filterOff={true} />;
 
-export default ({ theme }) => (theme ? escuro : claro);
+export default ({ theme }) => (theme.type === "claro" ? claro : escuro);

@@ -4,17 +4,19 @@ import {
   conteudoEscuro,
   fundoClaro,
   textoFundoClaro,
-  conteudoClaro
-} from '../../styles/variables'
+  conteudoClaro,
+} from "../../styles/variables";
 
 export const temaEscuro = {
+  type: "escuro",
   body: fundoEscuro,
   inside: conteudoEscuro,
-  text: textoFundoEscuro
-}
+  text: textoFundoEscuro,
+};
 
 export const temaClaro = {
+  type: "claro",
   body: fundoClaro,
   inside: conteudoClaro,
-  text: textoFundoClaro
-}
+  text: textoFundoClaro,
+};

@@ -5,6 +5,7 @@ import olho_icone from "../../assets/images/olho.svg";
 import dinheiro from "../../assets/images/dinheiro.svg";
 
 import { Box, Button, Saldo } from "./styles";
+import { Icone } from "../UI";
 
 export default () => {
   const [toggleState, untoggle] = useState(true);
@@ -19,7 +20,7 @@ export default () => {
       <div style={{ fontSize: "26px", padding: "20px 0" }}>
         Saldo disponível{" "}
         <span>
-          <img width="25" height="25" src={dinheiro} alt="Ícone Saldo" />
+          <Icone src={dinheiro} alt="Ícone Saldo" />
         </span>
         {toggleState ? (
           <Saldo>
